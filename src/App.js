@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Menu } from 'semantic-ui-react';
+import AccountChanged from './components/AccountChanged';
+import IsConnected from './components/IsConnected';
+import Isinstalled from './components/Isinstalled';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu>
+        <Menu.Item
+          name='@metamask/onboarding'
+        >@metamask/onboarding</Menu.Item>
+      </Menu>
+      <div className='heading'>
+        <h1>this metamask onboarding library testing</h1>
+        <h1>MetaMask : </h1>
+      </div>
+      <div className='metamask_button'>
+        <Isinstalled />
+        <IsConnected />
+        <AccountChanged />
+      </div>
     </div>
   );
 }
