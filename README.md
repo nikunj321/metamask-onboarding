@@ -1,2 +1,2 @@
-metamask/onboarding librery try out
+metamask/onboarding library try out
 # metamask-onboarding
